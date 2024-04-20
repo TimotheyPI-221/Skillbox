@@ -18,20 +18,40 @@ img {
 }
 
 .container{
+  font-family: Arial Regular;
   width: 1170px;
   margin: 0 auto;
   max-width: 100%;
 }
 
+.Vector{
+  margin: 25px 0;
+}
+
+.link{
+  background-image: url("../img/Arrow\ 1.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 52px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3f2aff;
+}
+
 .head-1{
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 60px;
   color: #3f2aff;
-  margin: 0;
-  margin-bottom: 50px;
+  
 }
 
 .module-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
   font-size: 0;
   margin: 0;
   padding: 0;
@@ -39,23 +59,19 @@ img {
 }
 
 .box{
-  display: inline-block;
+  position: relative;
   margin: 0;
-  margin-bottom: 25px;
+  padding: 25px;
   width: 572px;
   height: 505px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
-  /* font-size: 16px; */
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.box:not(:nth-child(2n)) {
-  margin-right: 25px;
-}
-
 .head-2{  
-  margin: 205px 25px 0 25px;
+  margin: 0;
+  margin-top: 180px;
   font-weight: 700;
   font-size: 40px;
   color: #3f2aff;
@@ -70,15 +86,24 @@ img {
 
 .list{
   margin: 0;
-  margin-left: 25px;
   padding: 0;
   list-style-type: none;
   /* font-size: 0; */
 }
 
-.list-text:not(:second-child){
-  margin-top: 2px;
+.number{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  font-weight: 400;
+  font-size: 40px;
+  /* text-align: right; */
+  color: #eaeaea;
 }
+
+/* .list-text:not(:second-child){
+  margin-top: 200px;
+} */
 
 .image-1{
   background-image: url("../img/im-1.png");
@@ -94,4 +119,18 @@ img {
 
 .image-4{
   background-image: url("../img/im-4.png");
+}
+
+.button{
+  display: block;
+  padding: 25px 76px;
+  margin: 50px auto;
+  width: 274px;
+  height: 70px;
+  border: 2px solid #3f2aff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #3f2aff;
+  background-color: #fff;
 }
